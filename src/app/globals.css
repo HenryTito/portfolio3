@@ -1,42 +1,38 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main {
+  
+  min-height: 100vh;
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.content {
+  margin-top: 2.5rem; /* mt-10 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem; /* px-12 */
+  padding-right: 2rem;
+  padding-top: 1.5rem; /* py-4 */
+  padding-bottom: 1rem;
+  max-width: 1500px; /* equivalente a container */
+}
+
+.about-section {
+  margin-top: 6rem; /* mt-24 */
+}
+
+.layout-principal{
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "projects"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  height: min 150vh;
+  background-color: black;
+
 }
