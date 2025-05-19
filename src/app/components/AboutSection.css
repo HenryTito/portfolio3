@@ -80,6 +80,7 @@
 
 .about-text{
   font-size: 1.05rem;
+  text-align: justify;
 }
 .paragrafo-hard{
   font-size: 1.2rem;
@@ -94,4 +95,39 @@
 
 .about{
   margin-bottom: 10px;
+}
+
+
+.icon{
+  margin-left: 0.5em;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.skills-column {
+  width: 50%;
+  list-style: none;
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* apenas uma coluna */
+    padding: 20px 20px; /* reduz o padding lateral */
+  }
+
+  .skills-column {
+    margin-bottom: 30px;
+  }
+
+  .paragrafo-hard,
+  .paragrafo-soft {
+    font-size: 1rem;
+  }
 }
