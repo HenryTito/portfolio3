@@ -32,4 +32,4 @@ React: Uma biblioteca JavaScript para construção de interfaces de usuário.
 
 React Icons: Uma coleção de ícones populares para projetos React.
 
- Esta é a segunda versão da documentação e do projeto. Alterações e melhorias serão feitas ao longo do tempo.
+ Esta é a terceira versão da documentação e do projeto. Alterações e melhorias serão feitas ao longo do tempo.
