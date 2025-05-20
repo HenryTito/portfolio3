@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Portfólio para o curso Desenvolvimento de software multiplataforma da Fatec
 
-## Getting Started
+Website de Portfólio
 
-First, run the development server:
+LINK VERCEL: https://portfolio3-omega-fawn.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este é um site de portfólio desenvolvido com Next.js. Ele exibe suas habilidades e projetos com um design elegante.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Instalação:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clone o repositório: git clone https://github.com/HenryTito/portfolio3.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesse o diretório do projeto
 
-## Learn More
+Instale as dependências: npm install
 
-To learn more about Next.js, take a look at the following resources:
+npm install framer-motion
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install react-type-animations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Uso:
 
-## Deploy on Vercel
+Inicie o servidor de desenvolvimento: npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Abra seu navegador e acesse http://localhost:3000 para visualizar o site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dependências As seguintes dependências são necessárias para este projeto:
+
+Next.js: Um framework React para renderização do lado do servidor e geração de sites estáticos.
+
+React: Uma biblioteca JavaScript para construção de interfaces de usuário.
+
+React Icons: Uma coleção de ícones populares para projetos React.
+
+ Esta é a terceira versão da documentação e do projeto. Alterações e melhorias serão feitas ao longo do tempo.
