@@ -9,6 +9,7 @@ const TAB_DATA = [
     id: "habilidades",
     content: (
       <div className="skills-container">
+        
   <ul className="skills-column">
     <p className="paragrafo-hard">Hard skills:</p>
     <li><a>Node.js</a><img className='icon' src="/images/node.png" width={20} height={19} /></li>

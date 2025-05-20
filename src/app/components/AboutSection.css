@@ -88,7 +88,7 @@
 }
 
 .paragrafo-soft{
-  margin-top: 15px;
+  
   font-size: 1.2rem;
   margin-bottom: 15px;
 }
@@ -124,6 +124,7 @@
 
   .skills-column {
     margin-bottom: 30px;
+    
   }
 
   .paragrafo-hard,
@@ -131,3 +132,4 @@
     font-size: 1rem;
   }
 }
+
