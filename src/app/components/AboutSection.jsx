@@ -1,7 +1,7 @@
-"use client"
-import React, { useState, useTransition } from 'react';
-import TabButton from './TabButton';
-import './AboutSection.css';
+"use client";
+import React, { useState, useTransition } from "react";
+import TabButton from "./TabButton";
+import "./AboutSection.css";
 
 const TAB_DATA = [
   {
@@ -9,52 +9,177 @@ const TAB_DATA = [
     id: "habilidades",
     content: (
       <div className="skills-container">
-        
-  <ul className="skills-column">
-    <p className="paragrafo-hard">Hard skills:</p>
-    <li><a>Node.js</a><img className='icon' src="/images/node.png" width={20} height={19} /></li>
-    <li>JavaScript <img className="icon" src="/images/javascript.png" width={20} height={19} /></li>
-    <li>C# <img className='icon' src="/images/csharp.png" width={20} height={19} /></li>
-    <li>Python <img className='icon' src="/images/python.png" width={20} height={19} /></li>
-    <li>React <img className='icon' src="/images/react.png" width={20} height={19} /></li>
-    <li>MySQL <img className='icon' src="/images/mysql.png" width={20} height={19} /></li>
-    <li>Figma <img className='icon' src="/images/figma.png" width={20} height={19} /></li>
-    <li>Docker <img className='icon' src="/images/docker.png" width={20} height={19} /></li>
-    <li>MongoDB <img className='icon' src="/images/mongodb.png" width={20} height={19} /></li>
-  </ul>
+        <ul className="skills-column">
+          <p className="paragrafo-hard">Hard skills:</p>
+          <li>
+            <a>Node.js</a>
+            <img
+              className="icon"
+              src="/images/node.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            JavaScript{" "}
+            <img
+              className="icon"
+              src="/images/javascript.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            C#{" "}
+            <img
+              className="icon"
+              src="/images/csharp.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Python{" "}
+            <img
+              className="icon"
+              src="/images/python.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            React{" "}
+            <img
+              className="icon"
+              src="/images/react.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            MySQL{" "}
+            <img
+              className="icon"
+              src="/images/mysql.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Figma{" "}
+            <img
+              className="icon"
+              src="/images/figma.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Docker{" "}
+            <img
+              className="icon"
+              src="/images/docker.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            MongoDB{" "}
+            <img
+              className="icon"
+              src="/images/mongodb.png"
+              width={20}
+              height={19}
+            />
+          </li>
+        </ul>
 
-  <ul className="skills-column">
-    <p className="paragrafo-soft">Soft skills:</p>
-    <li>Trabalho em equipe <img className='icon' src="/images/teamwork.png" width={20} height={19} /></li>
-    <li>Comunicação eficaz <img className='icon' src="/images/com.png" width={20} height={19} /></li>
-    <li>Resolução de problemas <img className='icon' src="/images/problems.png" width={20} height={19} /></li>
-    <li>Adaptabilidade <img className='icon' src="/images/adaptable2.png" width={20} height={19} /></li>
-    <li>Proatividade <img className='icon' src="/images/solution2.png" width={20} height={19} /></li>
-    <li>Empatia <img className='icon' src="/images/empathy.png" width={20} height={19} /></li>
-  </ul>
-</div>
-    )
+        <ul className="skills-column">
+          <p className="paragrafo-soft">Soft skills:</p>
+          <li>
+            Trabalho em equipe{" "}
+            <img
+              className="icon"
+              src="/images/teamwork.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Comunicação eficaz{" "}
+            <img
+              className="icon"
+              src="/images/com.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Resolução de problemas{" "}
+            <img
+              className="icon"
+              src="/images/problems.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Adaptabilidade{" "}
+            <img
+              className="icon"
+              src="/images/adaptable2.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Proatividade{" "}
+            <img
+              className="icon"
+              src="/images/solution2.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Empatia{" "}
+            <img
+              className="icon"
+              src="/images/empathy.png"
+              width={20}
+              height={19}
+            />
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     title: "Educação",
     id: "educacao",
     content: (
       <ul className="custom-list">
-        <li className='about'>Colégio Elo Educacional 2013-2024</li>
-        <li className='about'>Imersão Backend | Alura |<br></br>
- Trabalhos com banco de dados (mySQL, PostgreSQL, MongoDB) .
- <br></br>Programação orientada a objetos.
- Criação de Rest API’S
-</li>
-<li className='about'>Curso de desenvolvimento Web | Alura |<br />
- Aprofundamento em JavaScript DOM, React, REST API, Node JS.<br></br>
- Desenvolvimento de aplicações web e programação orientada a objetos.</li>
-        <li className='about'>Imersão Backend | Hashtag treinamentos|<br></br>
- Projetos de automatização de cadastros utilizando python com a biblioteca pyautogui, Pandas e openpyxl
-</li>
-        <li>Desenvolvimento de Software Multiplataforma | FATEC | (cursando)</li>
+        <li className="about">Colégio Elo Educacional 2013-2024</li>
+        <li className="about">
+          Imersão Backend | Alura |<br></br>
+          Trabalhos com banco de dados (mySQL, PostgreSQL, MongoDB) .<br></br>
+          Programação orientada a objetos. Criação de Rest API’S
+        </li>
+        <li className="about">
+          Curso de desenvolvimento Web | Alura |<br />
+          Aprofundamento em JavaScript DOM, React, REST API, Node JS.<br></br>
+          Desenvolvimento de aplicações web e programação orientada a objetos.
+        </li>
+        <li className="about">
+          Imersão Backend | Hashtag treinamentos|<br></br>
+          Projetos de automatização de cadastros utilizando python com a
+          biblioteca pyautogui, Pandas e openpyxl
+        </li>
+        <li>
+          Desenvolvimento de Software Multiplataforma | FATEC | (cursando)
+        </li>
       </ul>
-    )
+    ),
   },
   {
     title: "Projetos",
@@ -66,9 +191,12 @@ const TAB_DATA = [
         <li>Aplicativo de tempo e clima</li>
         <li>Criação de REST APIs</li>
         <li>Réplica do aplicativo Spotify usando React</li>
-        <li>Projeto para filtragem de dados de exportação e importação de municípios FATEC</li>
+        <li>
+          Projeto para filtragem de dados de exportação e importação de
+          municípios FATEC
+        </li>
       </ul>
-    )
+    ),
   },
   {
     title: "Redes sociais",
@@ -77,19 +205,39 @@ const TAB_DATA = [
       <ul className="custom-list2">
         <li>
           <div className="social-link">
-            <img src="/images/icons8.png" width={20} height={20} alt="Instagram Logo" />
-            <a className='link_texto' href="https://www.instagram.com/htito.og/">Instagram</a>
+            <img
+              src="/images/icons8.png"
+              width={20}
+              height={20}
+              alt="Instagram Logo"
+            />
+            <a
+              className="link_texto"
+              href="https://www.instagram.com/htito.og/"
+            >
+              Instagram
+            </a>
           </div>
         </li>
         <li>
           <div className="social-link">
-            <img src="/images/linked.png" width={20} height={20} alt="LinkedIn Logo" />
-            <a className='link_texto' href="https://www.linkedin.com/in/henry-tito-989b4b354/">LinkedIn</a>
+            <img
+              src="/images/linked.png"
+              width={20}
+              height={20}
+              alt="LinkedIn Logo"
+            />
+            <a
+              className="link_texto"
+              href="https://www.linkedin.com/in/henry-tito-989b4b354/"
+            >
+              LinkedIn
+            </a>
           </div>
         </li>
       </ul>
-    )
-  }
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -108,10 +256,17 @@ const AboutSection = () => {
         <div className="about-content">
           <h2 className="about-title">Sobre mim</h2>
           <p className="about-text">
-          Olá! Me chamo Henry Vilela Silva Tito, tenho 18 anos e sou estudante de Desenvolvimento de Software Multiplataforma na FATEC. Sempre gostei muito da área de tecnologia, e foi na programação que encontrei meu verdadeiro interesse. Gosto de transformar ideias em soluções práticas e criativas, explorando diferentes linguagens, ferramentas e tecnologias.
-          Sou uma pessoa curiosa e determinada, sempre buscando aprender mais, melhorar minhas habilidades e enfrentar novos desafios. Fora do universo tech, gosto de jogar bola, aproveitar o tempo com amigos e me manter ativo. Me considero prestativo, comunicativo e proativo, sempre disposto a colaborar, aprender e contribuir com o time.
-
-
+            Olá! Me chamo Henry Vilela Silva Tito, tenho 18 anos e sou estudante
+            de Desenvolvimento de Software Multiplataforma na FATEC. Sempre
+            gostei muito da área de tecnologia, e foi na programação que
+            encontrei meu verdadeiro interesse. Gosto de transformar ideias em
+            soluções práticas e criativas, explorando diferentes linguagens,
+            ferramentas e tecnologias. Sou uma pessoa curiosa e determinada,
+            sempre buscando aprender mais, melhorar minhas habilidades e
+            enfrentar novos desafios. Fora do universo tech, gosto de jogar
+            bola, aproveitar o tempo com amigos e me manter ativo. Me considero
+            prestativo, comunicativo e proativo, sempre disposto a colaborar,
+            aprender e contribuir com o time.
           </p>
           <div className="tab-buttons">
             {TAB_DATA.map((t) => (
