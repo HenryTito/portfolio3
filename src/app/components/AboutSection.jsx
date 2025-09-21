@@ -30,6 +30,33 @@ const TAB_DATA = [
             />
           </li>
           <li>
+            Java{" "}
+            <img
+              className="icon"
+              src="/images/java.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Aws{" "}
+            <img
+              className="icon"
+              src="/images/aws.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
+            Google Cloud{" "}
+            <img
+              className="icon"
+              src="/images/googlecloud.png"
+              width={20}
+              height={19}
+            />
+          </li>
+          <li>
             C#{" "}
             <img
               className="icon"
@@ -160,24 +187,39 @@ const TAB_DATA = [
     content: (
       <ul className="custom-list">
         <li className="about">Colégio Elo Educacional 2013-2024</li>
-        <li className="about">
-          Imersão Backend | Alura |<br></br>
-          Trabalhos com banco de dados (mySQL, PostgreSQL, MongoDB) .<br></br>
-          Programação orientada a objetos. Criação de Rest API’S
+         <li className="about">
+          Desenvolvimento de Software Multiplataforma | FATEC | (cursando, atualmente no 2º Semestre)
         </li>
         <li className="about">
-          Curso de desenvolvimento Web | Alura |<br />
-          Aprofundamento em JavaScript DOM, React, REST API, Node JS.<br></br>
-          Desenvolvimento de aplicações web e programação orientada a objetos.
-        </li>
-        <li className="about">
-          Imersão Backend | Hashtag treinamentos|<br></br>
-          Projetos de automatização de cadastros utilizando python com a
-          biblioteca pyautogui, Pandas e openpyxl
-        </li>
-        <li>
-          Desenvolvimento de Software Multiplataforma | FATEC | (cursando)
-        </li>
+  Desenvolvimento Web | Alura |<br />
+  JavaScript DOM, React, REST API e Node.js. POO aplicada em aplicações web.
+</li>
+
+<li className="about">
+  POO Multilínguas | Alura |<br />
+  Fundamentos e práticas de orientação a objetos com JavaScript, Java, C# e Python.
+</li>
+
+<li className="about">
+  Imersão Backend | Alura |<br />
+  MySQL, PostgreSQL, MongoDB. Criação de REST APIs com foco em integração e boas práticas.
+</li>
+
+<li className="about">
+  Automação com Python | Hashtag |<br />
+  Automação com PyAutoGUI, Pandas e OpenPyXL. Projetos de cadastro e manipulação de dados.
+</li>
+
+<li className="about">
+  Imersão Fullstack | Hashtag |<br />
+  Aplicação fullstack com React.js, Next.js e MySQL. Projeto réplica do Spotify.
+</li>
+
+<li className="about">
+  DevOps | Alura + Google Cloud |<br />
+  Deploy com Docker no GCP. CI/CD com GitHub Actions e pipelines de entrega contínua.
+</li>
+       
       </ul>
     ),
   },
@@ -186,15 +228,16 @@ const TAB_DATA = [
     id: "projetos",
     content: (
       <ul className="custom-list">
-        <li>Sistema de controle de vendas usando Java</li>
-        <li>Frontend para um Software de reconhecimento de tráfego urbano</li>
-        <li>Aplicativo de tempo e clima</li>
-        <li>Criação de REST APIs</li>
-        <li>Réplica do aplicativo Spotify usando React</li>
-        <li>
-          Projeto para filtragem de dados de exportação e importação de
-          municípios FATEC
-        </li>
+        <li className="about">Réplica do Spotify com React.JS e MySQL (projeto freelancer)</li>
+        <li className="about">Sistema de controle de vendas com Java e MySQL (aplicação desktop)</li>
+<li className="about">Frontend para software de reconhecimento de tráfego urbano</li>
+<li className="about">Aplicativo de tempo e clima com consumo de API</li>
+<li className="about">Criação de REST APIs com integração a bancos de dados</li>
+<li className="about">
+  Plataforma web interativa para análise de dados públicos de comércio exterior dos municípios de SP (2019–2025)
+</li>
+<li className="about">Automatização de cadastros com Python, PyAutoGUI e planilhas (OpenPyXL)</li>
+<li className="about">Desenvolvimento de aplicações com bancos de dados em nuvem (Google Cloud Platform, AWS)</li>
       </ul>
     ),
   },
